@@ -1,10 +1,49 @@
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#jonahs-picks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .picks {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
 .state-item {
-    margin-right: 20px;
     min-width: 150px;
     flex: 1;
+    cursor: pointer;
+    border: solid rgba(0, 0, 0, 0) 2px;
+    transition: border .5s linear;
+    padding: 10px;
+}
+
+.state-item:hover {
+    border: solid rgba(0, 0, 0, 1) 2px;
+
 }
